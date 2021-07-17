@@ -4,7 +4,7 @@ set (CMAKE_CXX_STANDARD 17) #standard of C++ is 17
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT TestProject)
 
-file(GLOB_RECURSE SRC_FILES "src/*.cpp" "Engine/*.h")
+file(GLOB_RECURSE SRC_FILES "Source/*.cpp" "Source/*.h")
 
 find_package(OpenGL REQUIRED)
 option(GLFW_BUILD_EXAMPLES "" OFF)
