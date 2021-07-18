@@ -1,13 +1,10 @@
 build
-makefile
-build_scripts_windows
 .vscode
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
 Testing
-Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
