@@ -4,6 +4,8 @@ set (CMAKE_CXX_STANDARD 17) #standard of C++ is 17
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
 
+add_executable(${PROJECT_NAME} OurDriver/Source/main.cpp)
+
 file(GLOB_RECURSE SRC_FILES "Source/*.cpp" "Source/*.h")
 
 find_package(OpenGL REQUIRED)
