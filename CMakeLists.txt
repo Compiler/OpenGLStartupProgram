@@ -8,7 +8,8 @@ option(GLFW_BUILD_EXAMPLES "" OFF)
 option(GLFW_INSTALL "" OFF)
 option(GLFW_BUILD_TESTS "" OFF)
 
-set(ROOT .)
+set(ROOT ".")
+set(DEPENDENCIES "${CMAKE_SOURCE_DIR}/Dependencies")
 
 
 add_subdirectory(OurLibrary)

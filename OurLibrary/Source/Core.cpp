@@ -5,6 +5,7 @@ Core::Core(){
     std::cout << "Constructor called\n";
 }
 void Core::load(){
+    glfwInit();
     std::cout << "load called\n";
 }
 void Core::update(){
