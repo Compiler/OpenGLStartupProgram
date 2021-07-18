@@ -5,15 +5,14 @@ add_library(
 	OurLibrary SHARED 
 	Source/Core.cpp
 	Source/Core.h
+	Source/OtherStuff/OtherStuffTest.h
 	)
 
-target_link_directories(OurLibrary PRIVATE "${DEPENDENCIES}/glfw/include/")
-target_link_directories(OurLibrary PRIVATE "Source")#link the root
-message("\n\n\n=======================\n${DEPENDENCIES}/glfw/include/")
+target_include_directories(OurLibrary PUBLIC "${DEPENDENCIES}/glfw/include")
+target_include_directories(OurLibrary PUBLIC "${DEPENDENCIES}/glad/include")
+target_include_directories(OurLibrary PUBLIC "${ROOT}/OurLibrary/Source/")#link the root
+message("\n\n\n=======================\n${DEPENDENCIES}/glfw/include")
 
-find_package(OpenGL REQUIRED)
-target_link_libraries(OurLibrary PRIVATE OpenGL::GL)
-
-
+target_link_libraries(OurLibrary PRIVATE glad)
 target_link_libraries(OurLibrary PRIVATE glfw ${GLFW_LIBRARIES})
 

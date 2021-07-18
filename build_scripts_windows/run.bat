@@ -1,2 +1,1 @@
-cd build
-TestProject.exe
+cd build && cd OurDriver && OurDriver.exe && cd ../

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
-#include "C:/Users/Work/Documents/OpenGLStartupProgram/Dependencies/glfw/include/GLFW/glfw3.h"
+#include <glad/glad.h>
+#include <glfw/glfw3.h>
 class Core{
 
     public:

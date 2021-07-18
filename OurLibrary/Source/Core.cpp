@@ -5,8 +5,24 @@ Core::Core(){
     std::cout << "Constructor called\n";
 }
 void Core::load(){
-    glfwInit();
     std::cout << "load called\n";
+    glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_SAMPLES, 4);
+    glfwWindowHint(GLFW_RESIZABLE, GL_TRUE);
+    glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, true);
+    GLFWwindow* _window = glfwCreateWindow(500, 500, "Tester!", 0, 0);
+    glfwMakeContextCurrent(_window);
+
+    int flags; glGetIntegerv(GL_CONTEXT_FLAGS, &flags);
+    if (flags & GL_CONTEXT_FLAG_DEBUG_BIT)
+    {
+        // initialize debug output 
+    }
+
+    
 }
 void Core::update(){
     std::cout << "update called\n";
