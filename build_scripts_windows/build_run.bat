@@ -3,4 +3,4 @@ if not exist "build" mkdir build
 cd build
 cmake -DBUILD_SHARED_LIBS=ON -G "MinGW Makefiles" ..
 make
-cd OurDriver && OurDriver.exe && cd ../
+OurDriver && cd ../

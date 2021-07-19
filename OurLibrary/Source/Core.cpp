@@ -19,7 +19,7 @@ void Core::load(){
     int flags; glGetIntegerv(GL_CONTEXT_FLAGS, &flags);
     if (flags & GL_CONTEXT_FLAG_DEBUG_BIT)
     {
-        // initialize debug output 
+        //LOG("Initialized!");
     }
 
     

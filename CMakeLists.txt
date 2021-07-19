@@ -11,8 +11,12 @@ option(GLFW_BUILD_TESTS "" OFF)
 set(ROOT "${CMAKE_SOURCE_DIR}")
 set(DEPENDENCIES "${CMAKE_SOURCE_DIR}/Dependencies")
 
+set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
+set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}")
 
 add_subdirectory(OurLibrary)
 add_subdirectory(OurDriver)
 add_subdirectory(Dependencies/glfw)
 add_subdirectory(Dependencies/glad)
+add_subdirectory(Dependencies/fmt EXCLUDE_FROM_ALL)
+
