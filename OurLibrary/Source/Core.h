@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <Logging/Logging.h>
 #include <glad/glad.h>
 #include <glfw/glfw3.h>
 class Core{
