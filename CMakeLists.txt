@@ -7,6 +7,7 @@ find_package(OpenGL REQUIRED)
 option(GLFW_BUILD_EXAMPLES "" OFF)
 option(GLFW_INSTALL "" OFF)
 option(GLFW_BUILD_TESTS "" OFF)
+option(BUILD_SHARED_LIBS "" OFF)
 
 set(ROOT "${CMAKE_SOURCE_DIR}")
 set(DEPENDENCIES "${CMAKE_SOURCE_DIR}/Dependencies")

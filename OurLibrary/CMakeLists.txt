@@ -20,5 +20,5 @@ message("\n\n\n=======================\n${DEPENDENCIES}/glfw/include")
 
 target_link_libraries(OurLibrary PRIVATE glad)
 target_link_libraries(OurLibrary PRIVATE glfw ${GLFW_LIBRARIES})
-target_link_libraries(OurLibrary PRIVATE fmt::fmt-header-only)
+target_link_libraries(OurLibrary PRIVATE fmt)
 
