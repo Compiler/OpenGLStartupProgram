@@ -1,7 +1,7 @@
 BUILD_SCRIPTS_ROOT = build_scripts
 
 WIN_BUILD_SCRIPTS_LOC = $(BUILD_SCRIPTS_ROOT)\\build_scripts_windows\\
-LINUX_BUILD_SCRIPTS_LOC = $(BUILD_SCRIPTS_ROOT)\\build_scripts_linux\\
+LINUX_BUILD_SCRIPTS_LOC = $(BUILD_SCRIPTS_ROOT)/build_scripts_linux/
 
 BUILD_LOC = $(WIN_BUILD_SCRIPTS_LOC) #defaults to windows
 EXTENSION = .bat 
