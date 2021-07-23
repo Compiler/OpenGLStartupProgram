@@ -3,8 +3,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(
 	OurLibrary SHARED 
-	Source/Core.cpp
 	Source/Core.h
+	Source/Core.cpp
 	Source/Logging/Logging.h
 	Source/OtherStuff/OtherStuffTest.h
 	)

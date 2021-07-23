@@ -16,8 +16,8 @@ else
     ifeq ($(UNAME_S),Linux)
 		BUILD_LOC = $(LINUX_BUILD_SCRIPTS_LOC)
 		EXTENSION = .sh
-		PRE_BUILD = chmod 777 build_scripts/* ;
-		POST_BUILD =  chmod 777 build ; chmod 777 build/*
+		PRE_BUILD = chmod -R 777 build_scripts/* ;
+		POST_BUILD =  chmod -R 777 build ; chmod -R 777 build/*
 	endif
 endif
 

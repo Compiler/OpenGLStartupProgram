@@ -11,8 +11,11 @@ endif()
 if(LINUX)
     message("LINUX MACHINE")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+    set( CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -fPIC" )
 endif()
 
+set( CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -Wall -O3 -fPIC" )
+set(EXE_FINAL_NAME "MyExe")
 
 find_package(OpenGL REQUIRED)
 option(GLFW_BUILD_EXAMPLES "" OFF)

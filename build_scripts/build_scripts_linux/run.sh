@@ -1,2 +1,2 @@
 cd build
-./OurDriver
+./MyExe
