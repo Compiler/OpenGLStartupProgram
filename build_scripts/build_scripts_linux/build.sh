@@ -4,6 +4,7 @@ if [ -d "build" ]
 then
     echo "Build exists" 
 else
+    echo "Build not there"
     mkdir build
 fi
 cd build

@@ -3,6 +3,17 @@ project(TestProject VERSION 1.0.0) #check for C and C++ extensions
 #set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
 
 
+if(UNIX AND NOT APPLE)
+    set(LINUX TRUE)
+endif()
+
+
+if(LINUX)
+    message("LINUX MACHINE")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+endif()
+
+
 find_package(OpenGL REQUIRED)
 option(GLFW_BUILD_EXAMPLES "" OFF)
 option(GLFW_INSTALL "" OFF)
