@@ -15,15 +15,12 @@ void Core::load(){
     glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, true);
     GLFWwindow* _window = glfwCreateWindow(500, 500, "Tester!", 0, 0);
     glfwMakeContextCurrent(_window);
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
-        std::cout << "Failed to initialize GLAD" << std::endl;
-    }   
     LOG("Context: Current");
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
+        FATAL("Failed to initialize GLAD");
+    }   
     int flags; glGetIntegerv(GL_CONTEXT_FLAGS, &flags);
-    if (flags & GL_CONTEXT_FLAG_DEBUG_BIT)
-    {
-        LOG("Initialized!");
-    }
+    if (flags & GL_CONTEXT_FLAG_DEBUG_BIT) LOG("Initialized!");
 
     
 }
