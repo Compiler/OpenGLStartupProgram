@@ -11,6 +11,7 @@
 //#define __FILENAME__ strrchr("\\" __FILE__, '\\') + 1
 #define __FILENAME__ (strrchr(__FILE__, '\\') ? strrchr(__FILE__, '\\') + 1 : __FILE__)
 
+#ifdef _DEBUG_MODE_
 #define ANSI_COLOR_RED          "\x1b[31m"
 #define ANSI_COLOR_BOLD_RED     "\x1b[1;31m"
 #define ANSI_COLOR_GREEN        "\x1b[32m"
@@ -81,3 +82,18 @@ inline void assert_log(bool exp, const char* file, int line, const S& format, Ar
 #define NA_LOG_NNL(...) fmt::print(fmt::emphasis::bold | fg(fmt::color::mint_cream), "{}:" STR(__LINE__) " " __VA_ARGS__, __FILENAME__)
 #define NA_WARNING_NNL(...) fmt::print(fmt::emphasis::bold | fg(fmt::color::yellow), "{}:" STR(__LINE__) " " __VA_ARGS__, __FILENAME__)
 #define NA_ERROR_NNL(...) fmt::print(fmt::emphasis::bold | fg(fmt::color::red), "{}:" STR(__LINE__) " " __VA_ARGS__, __FILENAME__)
+
+#else
+#define LOG(format, ...) 
+#define DEBUG(format, ...) 
+#define WARN(format, ...) 
+#define ERROR(format, ...) 
+#define FATAL(format, ...) 
+
+#define LOG(...) 
+#define DEBUG(...) 
+#define WARN(...) 
+#define ERROR(...) 
+#define FATAL(...) 
+
+#endif

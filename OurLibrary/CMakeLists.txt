@@ -3,11 +3,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(
 	OurLibrary SHARED 
-	Source/Core.h
 	Source/Core.cpp
+	Source/Core.h
 	Source/Logging/Logging.h
 	Source/OtherStuff/OtherStuffTest.h
 	)
+
+
+add_definitions(-D_DEBUG_MODE_)
 
 target_include_directories(OurLibrary PUBLIC "${DEPENDENCIES}/glfw/include")
 target_include_directories(OurLibrary PUBLIC "${DEPENDENCIES}/glad/include")
