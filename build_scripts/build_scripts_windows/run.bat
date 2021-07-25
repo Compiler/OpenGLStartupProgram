@@ -1,1 +1,1 @@
-cd build && OurDriver && cd ../
+cd build && MyExe && cd ../

@@ -17,7 +17,7 @@ else
 		BUILD_LOC = $(LINUX_BUILD_SCRIPTS_LOC)
 		EXTENSION = .sh
 		PRE_BUILD = chmod -R 777 build_scripts/* ;
-		POST_BUILD =  chmod -R 777 build ; chmod -R 777 build/*
+		POST_BUILD =  chmod -R 777 build ;
 	endif
 endif
 

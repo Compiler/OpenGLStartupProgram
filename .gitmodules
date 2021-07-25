@@ -4,3 +4,9 @@
 [submodule "Dependencies/fmt"]
 	path = Dependencies/fmt
 	url = https://github.com/fmtlib/fmt.git
+[submodule "Dependencies/glm"]
+	path = Dependencies/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "Dependencies/stbimage"]
+	path = Dependencies/stbimage
+	url = https://github.com/nothings/stb.git

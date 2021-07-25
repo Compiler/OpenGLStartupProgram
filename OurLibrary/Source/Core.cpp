@@ -3,6 +3,7 @@
 
 Core::Core(){
     std::cout << "Constructor called\n";
+    glm::vec3 vec{1,2,3};
 }
 void Core::load(){
     LOG("Core::load() Called.");

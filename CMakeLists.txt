@@ -33,5 +33,6 @@ add_subdirectory(OurLibrary)
 add_subdirectory(OurDriver)
 add_subdirectory(Dependencies/glfw)
 add_subdirectory(Dependencies/glad)
+add_subdirectory(Dependencies/glm)
 add_subdirectory(Dependencies/fmt EXCLUDE_FROM_ALL)
 
