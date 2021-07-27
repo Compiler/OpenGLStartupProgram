@@ -6,7 +6,7 @@ Quick program to validate settings through concrete cross-utility building of Op
 - Currently only supports MinGW on windows
 
 ```
-> git clone --recurse-submodule git@github.com:Compiler/OpenGLStartupProgram.git
+> git clone --recurse-submodules git@github.com:Compiler/OpenGLStartupProgram.git
 > make
 > make run
 ```
